@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://annotation.com"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+            <EditText
+                android:id="@+id/etProductName"
+                android:layout_marginTop="150dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_price"
+                android:inputType="text"
+                android:importantForAutofill="no"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/etProductPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_name"
+                android:inputType="numberDecimal"
+                android:importantForAutofill="no"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/etProductTags"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_tag"
+                android:inputType="text"
+                android:importantForAutofill="no"
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:id="@+id/btnSerialize"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Сериализовать в JSON"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/button"/>
+
+            <TextView
+                android:id="@+id/tvJsonResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:background="#F0F0F0"
+                android:padding="8dp"
+                android:textColor="#333333"
+                android:fontFamily="monospace"
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:id="@+id/btnDeserialize"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Десериализовать из JSON"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/button"/>
+
+            <TextView
+                android:id="@+id/tvObjectResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:background="#E8F5E9"
+                android:padding="8dp"
+                android:textColor="#1B5E20"
+                android:layout_marginBottom="16dp"/>
+
+        </LinearLayout>
+
+</LinearLayout>
